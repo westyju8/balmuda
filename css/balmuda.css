@@ -1,0 +1,345 @@
+@charset "UTF-8";
+
+*       { margin: 0; padding: 0; box-sizing: border-box; }
+a       {text-decoration: none; color: black;}
+ul      {list-style: none;}
+
+@font-face{
+font-family: Sequel Sans Semi Bold Head;
+src:url("../font/Sequel Sans Semi Bold Head.eot");
+src:url("../font/Sequel Sans Semi Bold Head.woff");
+}
+@font-face{
+font-family: Sequel Sans Medium Body;
+src:url("../font/Sequel Sans Medium Body.eot");
+src:url("../font/Sequel Sans Medium Body.woff");
+}
+
+#layout {max-width: 1920px; overflow: hidden;}
+
+/* NOTE: menu */
+
+#menu {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+#menu {
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 0px;
+  height: 100vh;
+  background-color: rgba(32,32,32,0.7);
+  transition: 0.5s;
+}
+#menu> button {
+  position: absolute;
+  top: -15px;
+  right: 35px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+#main_menu {
+  margin: 190px 0 0 215px;
+}
+#main_menu li  {
+  font-family: 'Sequel Sans Semi Bold Head', sans-serif;
+  font-size: 2.35rem;
+  font-weight: bold;
+  margin-bottom: 23px;
+}
+#main_menu li a{
+  color: #888;
+}
+
+#sub_menu {
+  margin: 55px 0 0 214px;
+}
+#sub_menu li {
+  font-family: 'Roboto', sans-serif;
+  color: #d6d6d6;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+#menu img {
+  margin: 42px 0 0 214px;
+}
+#menu li a:hover {
+  color: white;
+}
+
+
+/* NOTE: main_page */
+
+#main_page  {
+  position: relative;
+  width: 1920px;
+  height:100vh;
+  background-image: url(../images/main_bg.jpg);
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: 300px;
+  transition: 0.3s;
+}
+#main_page> nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 45px 0 32px;
+}
+#main_text {
+  max-width: 600px;
+  height: 400px;
+  margin: 224px 0 0 254px;
+  color: white;
+}
+#main_text h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin-bottom: 35px;
+  color: #f0f0f0;
+}
+#main_text h1 {
+  font-family: 'Sequel Sans Semi Bold Head', sans-serif;
+  font-size: 5.45rem;
+  margin-bottom: 35px;
+}
+#main_text p  {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 90px;
+  color: #9e9e9e;
+}
+#main_text h6 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #e0e0e0;
+}
+#main_text h6 span  {
+  margin-left: 8px;
+  cursor: pointer;
+}
+#main_text h6 span:hover {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#gotoStore  {
+  position: absolute;
+  bottom: 30px;
+  right: 45px;
+}
+
+#main_page.blur::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(5px); /* apply the blur */
+  backdrop-filter: blur(5px);         /* apply the blur */
+}
+
+/* NOTE: Tech 1 section */
+
+#tech_01  {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 540px;
+}
+
+.bg_text {
+  position: relative;
+  display: flex;
+}
+.bg_text img {
+  margin-right: 100px;
+}
+
+#tech_01> .tech_model {
+  position: absolute;
+  top: 200px;
+  left: calc(100% - 56%);
+}
+
+#tech_01> .tech_text {
+  float: right;
+  width: 400px;
+  height: 480px;
+  line-height: 62px;
+  margin: 125px 235px 0 0;
+}
+.tech_text h1  {
+  font-family: 'Sequel Sans Semi Bold Head', sans-serif;
+  font-size: 3.7rem;
+  margin-bottom: 40px;
+}
+.tech_text h1 span {
+  color: #848489;
+}
+.tech_text p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 25px;
+  color: #7f7f7f;
+  margin-bottom: 38px;
+}
+.tech_text hr {
+  border: 0;
+  height: 2px;
+  background-color: black;
+}
+.tech_text h3 {
+  font-family: 'Sequel Sans Medium Body', sans-serif;
+  font-size: 1.4rem;
+}
+.tech_text button {
+  padding: 6px 26px 8px 26px;
+  background: transparent;
+  border: 2px solid #1e1e1e;
+  border-radius: 20px;
+  font-family: 'Sequel Sans Medium Body', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tech_text button:hover  {
+  background: #1e1e1e;
+  border: 2px solid #1e1e1e;
+  color: white;
+}
+
+/* NOTE: Tech 2 section */
+
+#tech_02  {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 300px;
+}
+#tech_02> .tech_text  {
+  margin-left: 273px;
+  padding-top: 50px;
+  line-height: 62px;
+}
+
+.tech_model_inside  {
+  position: absolute;
+  top: -260px;
+  left: calc(100% - 56.3%);
+  z-index: 5;
+}
+#tech_02> .tech_model {
+  position: absolute;
+  top: -100px;
+  left: calc(100% - 56%);
+}
+.fix {
+  position:fixed;
+  _position:absolute;
+  top: 150px;
+  z-index: 2;
+}
+
+
+/* NOTE: Tech 3 section */
+
+#tech_03  {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 300px;
+}
+
+.tech_gallery_btn {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  display: flex;
+  width: 525px;
+  height: 280px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.tech_gallery_btn button {
+  width: 53px;
+  height: 53px;
+  background: transparent;
+  border: 1px solid #7f7f7f;
+  color: #7f7f7f;
+  border-radius: 50%;
+  margin-top: 113px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.tech_gallery_btn button:hover  {
+  background: black;
+  border: 1px solid #black;
+  color: white;
+}
+.tech_gallery_btn button:last-child {
+  margin-left: 350px;
+}
+
+.tech_gallery {
+  position: absolute;
+  top: 200px;
+  left: 290px;
+  display: flex;
+  width: 350px;
+  height: 280px;
+  overflow: hidden;
+}
+
+
+
+
+#tech_03> .tech_text {
+  float: right;
+  width: 400px;
+  height: 480px;
+  line-height: 62px;
+  margin: 100px 230px 0 0;
+}
+#tech_03> .tech_text> p  {
+  font-family: 'Roboto', sans-serif;
+  line-height: 25px;
+  color: #7f7f7f;
+  margin-bottom: 65px;
+}
+#tech_03> .tech_model {
+  position: absolute;
+  top: 0px;
+  left: calc(100% - 56%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
