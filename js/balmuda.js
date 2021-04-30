@@ -30,7 +30,7 @@ $(document).ready(function(){
 
   $(window).scroll(
       function(){
-          //스크롤의 위치가 상단에서 450보다 크면
+          //스크롤의 위치가 상단에서 1300보다 크면
           if($(window).scrollTop() > 1300){
           /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
               $('#model01').addClass("fix");
@@ -42,7 +42,48 @@ $(document).ready(function(){
           }
       }
   );
-
+  $(window).scroll(
+      function(){
+          //스크롤의 위치가 상단에서 2400보다 크면
+          if($(window).scrollTop() > 2400){
+          /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
+              $('#model01').addClass("absolute").removeClass("fix");
+              //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
+          }
+          else{
+              $('#model01').removeClass("absolute");
+              //위의 if문에 대한 조건 아닌경우 fix라는 class를 삭제함
+          }
+      }
+  );
+  $(window).scroll(
+      function(){
+          //스크롤의 위치가 상단에서 2500보다 크면
+          if($(window).scrollTop() > 2500){
+          /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
+              $('#model02').addClass("fix");
+              //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
+          }
+          else{
+              $('#model02').removeClass("fix");
+              //위의 if문에 대한 조건 아닌경우 fix라는 class를 삭제함
+          }
+      }
+  );
+  $(window).scroll(
+      function(){
+          //스크롤의 위치가 상단에서 3700보다 크면
+          if($(window).scrollTop() > 3700){
+          /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
+              $('#model02').addClass("absolute").removeClass("fix");
+              //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
+          }
+          else{
+              $('#model02').removeClass("absolute");
+              //위의 if문에 대한 조건 아닌경우 fix라는 class를 삭제함
+          }
+      }
+  );
 
 
 
@@ -51,6 +92,24 @@ $(document).ready(function(){
 // NOTE: tech 3 section click - img switch
 
 
+// NOTE: detail img effect
+
+$("#group1").addClass("scale");
+
+// $(window).scroll(
+//     function(){
+//         //스크롤의 위치가 상단에서 3700보다 크면
+//         if($(window).scrollTop() > 3700){
+//         /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
+//             $('#group1').width(200%);
+//             //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
+//         }
+//         else{
+//             $('#model02').removeClass("absolute");
+//             //위의 if문에 대한 조건 아닌경우 fix라는 class를 삭제함
+//         }
+//     }
+// );
 
 
 
