@@ -14,8 +14,39 @@ font-family: Sequel Sans Medium Body;
 src:url("../font/Sequel Sans Medium Body.eot");
 src:url("../font/Sequel Sans Medium Body.woff");
 }
+@font-face{
+font-family: Sequel Sans Medium Head;
+src:url("../font/Sequel Sans Medium Head.eot");
+src:url("../font/Sequel Sans Medium Head.woff");
+}
+@font-face{
+font-family: Sequel Sans Roman Body;
+src:url("../font/Sequel Sans Roman Body.eot");
+src:url("../font/Sequel Sans Roman Body.woff");
+}
+@font-face{
+font-family: Sequel Sans Semi Bold Obl Body;
+src:url("../font/Sequel Sans Semi Bold Obl Body.eot");
+src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
+}
+
+
 
 #layout {max-width: 1920px; overflow: hidden;}
+
+#scrolltop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px; height: 50px;
+  background-color: dodgerblue;
+  z-index: 100;
+}
+#scrolltop p {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
 
 /* NOTE: menu */
 
@@ -281,7 +312,7 @@ src:url("../font/Sequel Sans Medium Body.woff");
   border-radius: 50%;
   margin-top: 113px;
   cursor: pointer;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 .tech_gallery_btn button:hover  {
   background: black;
@@ -443,30 +474,352 @@ src:url("../font/Sequel Sans Medium Body.woff");
   color: #c7c7c7;
   margin-bottom: 150px;
 }
-#award> img {
+#award> video {
   position: absolute;
   bottom: 0;
   left:0;
 }
 
 
+/* NOTE: jet_button section */
+
+#jet_button {
+  position: relative;
+  background-color: #212225;
+  width: 100%;
+  height: 1000px;
+  padding-top: 400px;
+}
+.jet_button_text  {
+  width: 1070px;
+  height: 300px;
+  margin: 0 auto;
+}
+.jet_button_text img {
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.jet_button_text p  {
+  font-family: 'Sequel Sans Medium Body', sans-serif;
+  font-size: 2rem;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+}
 
 
+/* NOTE: scene section */
+
+#scene {
+  position: relative;
+  width: 100%;
+  height: 950px;
+  overflow: hidden;
+}
+#jetbutton_active {
+  position: absolute;
+  top: calc(100% - 62%);
+  left: calc(100% - 54.5%);
+  z-index: 1;
+}
+.scene  {
+  position: absolute;
+}
+.scene img {
+  width: 100%;
+}
+.scene div {
+  position: absolute;
+  padding: 12px 22px;
+  border-radius: 25px;
+  top: calc(100% - 48%);
+  left: calc(100% - 60.5%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: rgba(255,255,255,0.8);
+}
+
+/* NOTE: about Us */
+
+#aboutUs {
+  position: relative;
+  width: 100%;
+  height: 1850px;
+  padding: 180px 261px;
+}
+
+.semi_title  {
+  margin: auto;
+  text-align: center;
+}
+.semi_title h2 {
+  font-family: 'Sequel Sans Semi Bold Head', sans-serif;
+  font-size: 3.2rem;
+  color: #171c1e;
+  margin-bottom: 25px;
+}
+.semi_title p {
+  font-family: 'Sequel Sans Medium Body', sans-serif;
+  font-size: 1.8rem;
+  color: #2e2f2f;
+  margin-bottom: 150px;
+}
+
+.aboutUs_text {
+  position: absolute;
+  bottom: 90px;
+  left: 530px;
+  width: 850px;
+  height: 650px;
+  padding: 50px 125px;
+  background-color: white;
+}
+.aboutUs_text> img {
+  margin-bottom: 28px;
+}
+.aboutUs_text> p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 28px;
+  color: #868686;
+  margin-bottom: 50px;
+}
+.aboutUs_text p span {
+  color: black;
+}
+.aboutUs_text hr {
+  border: 0px;
+  background: black;
+  height: 2px;
+  margin-bottom: 15px;
+}
+.aboutUs_text> div {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutUs_text> div div {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+.aboutUs_text> div div h3 {
+  font-size: 1.41rem;
+  margin-bottom: 5px;
+}
+.aboutUs_text> div div p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #303030;
+}
+
+/* NOTE: history section */
+
+#history  {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background: black;
+  padding: 190px 270px ;
+}
+
+#history> h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 26px;
+}
+
+/* NOTE: Year */
+.history_years  {
+  position: absolute;
+  display: flex;
+  width: 1730px;
+  justify-content: space-between;
+  top: 250px;
+  left: 265px;
+  z-index: 1;
+}
+.history_years> div {
+  font-family: 'Roboto', sans-serif;
+  font-size: 11rem;
+  color: white;
+}
+
+/* NOTE: images */
+.history_img {
+  position: absolute;
+  top: 100px;
+  right: 240px;
+}
+
+/* NOTE: text */
+.history_text {
+  position: absolute;
+  top: 500px;
+  left: 273px;
+  color: white;
+  display: flex;
+  width: 2300px;
+  justify-content: space-between;
+  z-index: 1;
+}
+.history_text_layout h2 {
+  font-family: 'Sequel Sans Semi Bold Head', sans-serif;
+  font-size: 2.7rem;
+  margin-bottom: 30px;
+}
+.history_text_layout p {
+  font-family: 'Roboto', sans-serif;
+  color: #a5a5a5;
+  line-height: 25px;
+  margin-bottom: 100px;
+}
+
+/* NOTE: button */
+.history_btn  {
+  position: absolute;
+  bottom: 190px;
+  width: 160px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+.history_btn button {
+  width: 65px;
+  height: 65px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.history_btn button:hover  {
+  border: none;
+  background: white;
+  color: black;
+}
+
+/* NOTE: Collection section*/
+
+#collection {
+  position: relative;
+  width: 100%;
+  height: 1900px;
+  padding: 290px 320px;
+}
+
+.toaster  {
+  display: flex;
+  margin-bottom: 90px;
+}
+.toaster> img {
+  max-height: 100%;
+  margin-right: 240px;
+  padding: 80px 10px 120px 10px;
+}
+.collection_text {
+  padding: 10px 0;
+}
+.collection_text h1  {
+  font-family: 'Sequel Sans Semi Bold Head', sans-serif;
+  font-size: 3.35rem;
+  line-height: 55px;
+  margin-bottom: 40px;
+}
+.collection_text h1 span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 40px;
+  color: #929292;
+}
+.collection_text> p {
+  font-family: 'Sequel Sans Roman Body', sans-serif;
+  font-size: 1.08rem;
+  line-height: 24px;
+  letter-spacing: -0.5pt;
+  color: #7f7f7f;
+  margin-bottom: 45px;
+}
+.collection_text hr {
+  width: 90%;
+  border: 0;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 40px;
+}
+
+.collection_text> div {
+  display: flex;
+  height: 45px;
+  align-items: center;
+}
+.collection_text button:first-of-type {
+  padding: 9px 28px 11px 28px;
+  background: transparent;
+  border: 2px solid #1e1e1e;
+  border-radius: 25px;
+  font-family: 'Sequel Sans Medium Body', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 60px;
+}
+.collection_text button:last-of-type  {
+  padding: 9px 14px 8px 18px;
+  font-size: 1.2rem;
+  background: transparent;
+  border: 2px solid #1e1e1e;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+.collection_text> div> p  {
+  font-family: 'Sequel Sans Semi Bold Obl Body', sans-serif;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.collection_text button:hover  {
+  background: #1e1e1e;
+  border: 2px solid #1e1e1e;
+  color: white;
+}
 
 
+.speaker  {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 65px;
+  margin-bottom: 500px;
+}
 
 
+/* NOTE: others */
 
-
-
-
-
-
-
-
-
-
-
+#others {
+  width: 100%;
+  height: 950px;
+  display: flex;
+}
+#others> div> img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+#others> div> img:hover {
+  transform: scale(1.05);
+}
+#others> div> p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2c2b2b;
+  margin-top: 25px;
+}
 
 
 

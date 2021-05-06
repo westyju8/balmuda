@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+
+// NOTE: scrolltop alert box
+  let dft = $("#scrolltop p").text();
+  let scrollH = $(window).scrollTop();
+  $("#scrolltop p").text(scrollH);
+
 // NOTE: menu click
 
   $("#menu_button").click(function(){
