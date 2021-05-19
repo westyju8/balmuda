@@ -256,6 +256,7 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   top:0;
   left: 0;
   z-index: 5;
+  display: none;
 }
 #tech01_popup> img {
   position: fixed;
@@ -264,6 +265,7 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   top: 55px;
   right: 60px;
   z-index: 6;
+  cursor: pointer;
 }
 #tech01_popup>  div {
   background-color: white;
@@ -278,7 +280,8 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
 }
 .tech_01_popup_model {
   flex: 1;
-  margin: 17px 50px 0 55px;
+  margin: 17
+  px 50px 0 55px;
 }
 .tech_01_popup_model img {
   display: block;
@@ -369,6 +372,7 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   top: -100px;
   left: calc(100% - 56%);
 }
+
 .fix {
   position:fixed;
   _position:absolute;
@@ -466,8 +470,11 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
 #model_big  {
   position: absolute;
   top: 40vh;
-  left: calc(100% - 60%);
+  left: calc(100% - 59.5%);
+  z-index: 2;
+  transition: 1s;
 }
+
 
 .detail_gallery {
   display: flex;

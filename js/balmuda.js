@@ -44,6 +44,19 @@ $(document).ready(function(){
     });
   }
 
+// NOTE: discover btn popup
+
+  $("#tech01_btn").click(function(){
+    $("#tech01_popup").show();
+    $("body").css("overflow","hidden"); //스크롤 고정
+    $("#tech01_popup> img").click(function(){
+      $("#tech01_popup").hide();
+      $("body").css("overflow","auto"); //스크롤 고정해제
+    });
+  });
+
+
+
 // NOTE: model moves with scrolling
 
   $(window).scroll(
@@ -53,6 +66,7 @@ $(document).ready(function(){
           /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
               $('#model01').addClass("fix");
               //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
+              $("#model02").hide();
           }
           else{
               $('#model01').removeClass("fix");
@@ -67,6 +81,7 @@ $(document).ready(function(){
           /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
               $('#model01').addClass("absolute").removeClass("fix");
               //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
+              $("#model02").show();
           }
           else{
               $('#model01').removeClass("absolute");
@@ -81,6 +96,7 @@ $(document).ready(function(){
           /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
               $('#model02').addClass("fix");
               //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
+              $("#model03").hide();
           }
           else{
               $('#model02').removeClass("fix");
@@ -95,6 +111,7 @@ $(document).ready(function(){
           /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
               $('#model02').addClass("absolute").removeClass("fix");
               //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
+              $("#model03").show();
           }
           else{
               $('#model02').removeClass("absolute");
@@ -102,6 +119,48 @@ $(document).ready(function(){
           }
       }
   );
+
+  $(window).scroll(
+      function(){
+          //스크롤의 위치가 상단에서 3700보다 크면
+          if($(window).scrollTop() > 3800){
+          /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
+              $('#model03').addClass("fix");
+              //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
+              $("#model_big").css({transform: "scale(0.65)"});
+          }
+          else{
+              $('#model03').removeClass("fix");
+              //위의 if문에 대한 조건 아닌경우 fix라는 class를 삭제함
+          }
+      }
+  );
+  $(window).scroll(
+      function(){
+          if($(window).scrollTop() > 5300){
+          /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
+              $('#model03').addClass("absolute").removeClass("fix");
+              //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
+              $("#model_big").show();
+          }
+          else{
+              $('#model03').removeClass("absolute");
+              //위의 if문에 대한 조건 아닌경우 fix라는 class를 삭제함
+          }
+      }
+  );
+
+
+// NOTE: detail section model img
+
+
+$(window).scroll(
+    function(){
+        if($(window).scrollTop() > 5400){
+          $("#model_big").stop().css({ transform: "scale(1)"});
+        }
+    }
+);
 
 
 
