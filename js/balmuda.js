@@ -44,7 +44,7 @@ $(document).ready(function(){
     });
   }
 
-// NOTE: discover btn popup
+// NOTE: discover btn popup 1
 
   $("#tech01_btn").click(function(){
     $("#tech01_popup").show();
@@ -55,6 +55,27 @@ $(document).ready(function(){
     });
   });
 
+// NOTE: discover btn popup 2
+
+  $("#tech02_btn").click(function(){
+    $("#tech02_popup").show();
+    $("body").css("overflow","hidden"); //스크롤 고정
+    $("#tech02_popup> img").click(function(){
+      $("#tech02_popup").hide();
+      $("body").css("overflow","auto"); //스크롤 고정해제
+    });
+  });
+
+  // NOTE: discover btn popup 3
+
+    $("#tech03_btn").click(function(){
+      $("#tech03_popup").show();
+      $("body").css("overflow","hidden"); //스크롤 고정
+      $("#tech03_popup> img").click(function(){
+        $("#tech03_popup").hide();
+        $("body").css("overflow","auto"); //스크롤 고정해제
+      });
+    });
 
 
 // NOTE: model moves with scrolling
@@ -164,30 +185,6 @@ $(window).scroll(
 
 
 
-
-
-// NOTE: tech 3 section click - img switch
-
-
-// NOTE: detail img effect
-
-$("#group1").addClass("scale");
-
-// $(window).scroll(
-//     function(){
-//         //스크롤의 위치가 상단에서 3700보다 크면
-//         if($(window).scrollTop() > 3700){
-//         /* if(window.pageYOffset >= $('원하는위치의엘리먼트').offset().top){ */
-//             $('#group1').width(200%);
-//             //위의 if문에 대한 조건 만족시 fix라는 class를 부여함
-//         }
-//         else{
-//             $('#model02').removeClass("absolute");
-//             //위의 if문에 대한 조건 아닌경우 fix라는 class를 삭제함
-//         }
-//     }
-// );
-
 // NOTE: video autoplay
 
 $(window).scroll(
@@ -199,6 +196,28 @@ $(window).scroll(
 
 )
 
+
+// NOTE: toaster_popup
+
+$(".toaster_btn_learnmore").click(function(){
+  $("#toaster_popup").show();
+  $("body").css("overflow","hidden"); //스크롤 고정
+  $("#toaster_popup> img").click(function(){
+    $("#toaster_popup").hide();
+    $("body").css("overflow","auto"); //스크롤 고정해제
+  });
+});
+
+// NOTE: toaster_video
+
+$(".toaster_btn_play").click(function(){
+  $("#toaster_video").show();
+  $("body").css("overflow","hidden"); //스크롤 고정
+  $("#toaster_video> img").click(function(){
+    $("#toaster_video").hide();
+    $("body").css("overflow","auto"); //스크롤 고정해제
+  });
+});
 
 // NOTE: footer bg_text
 

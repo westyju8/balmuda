@@ -246,7 +246,7 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   color: white;
 }
 
-/* NOTE: tech01_poup */
+/* NOTE: tech01_popup */
 
 #tech01_popup {
   background-color: rgba(0,0,0,0.8);
@@ -280,20 +280,20 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
 }
 .tech_01_popup_model {
   flex: 1;
-  margin: 17
-  px 50px 0 55px;
+  margin: 17px 50px 0 55px;
 }
-.tech_01_popup_model img {
+.popup_model img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto
 }
-.tech_01_popup_model> div{
+.popup_btn {
   display: flex;
   width: 110px;
   justify-content: space-between;
   margin: 0 auto;
+
 }
-.tech_01_popup_model> div> button {
+.popup_btn> button {
   width: 42px;
   height: 42px;
   background: transparent;
@@ -304,7 +304,7 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   cursor: pointer;
   transition: 0.2s;
 }
-.tech_01_popup_model> div> button:hover  {
+.popup_btn> button:hover  {
   background: black;
   border: 1px solid #black;
   color: white;
@@ -386,6 +386,68 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   z-index: 2;
 }
 
+/* NOTE: tech02_popup */
+
+#tech02_popup {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top:0;
+  left: 0;
+  z-index: 5;
+  display: none;
+}
+#tech02_popup> img {
+  position: fixed;
+  width: 33px;
+  height: 33px;
+  top: 55px;
+  right: 60px;
+  z-index: 6;
+  cursor: pointer;
+}
+.tech02_popup_contents {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 1180px;
+  height: 770px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 50px 80px 50px 100px;
+}
+.tech_02_popup_text {
+  width: 410px;
+  height: 630px;
+  margin-top: 10px;
+}
+.tech_02_popup_text h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #a2a2a2;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.tech_02_popup_text h2 {
+  font-family: 'Sequel Sans Semi Bold Head', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.tech_02_popup_text p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #959595;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.tech_02_popup_text> hr {
+  border: none;
+  background-color: #dfdfdf;
+  height: 2px;
+  margin-bottom: 40px;
+}
 
 /* NOTE: Tech 3 section */
 
@@ -458,6 +520,84 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   left: calc(100% - 56%);
 }
 
+/* NOTE: tech03_popup */
+
+#tech03_popup {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top:0;
+  left: 0;
+  z-index: 5;
+  display: none;
+}
+#tech03_popup> img {
+  position: fixed;
+  width: 33px;
+  height: 33px;
+  top: 55px;
+  right: 60px;
+  z-index: 6;
+  cursor: pointer;
+}
+.tech03_popup_contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 1180px;
+  height: 770px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 80px 100px 80px 160px;
+}
+.tech03_popup_contents img {
+  margin-right: 150px;
+}
+.tech_03_popup_text {
+  width: 440px;
+  height: 370px;
+  margin-bottom: 10px;
+}
+.tech_03_popup_text h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #a2a2a2;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.tech_03_popup_text h2 {
+  font-family: 'Sequel Sans Semi Bold Head', sans-serif;
+  font-size: 2.7rem;
+  margin-bottom: 30px;
+}
+.tech_03_popup_text p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #959595;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.tech_03_popup_text p span {
+  font-weight: 500;
+}
+
+.tech_03_popup_text> hr {
+  border: none;
+  background-color: #dfdfdf;
+  height: 2px;
+  margin-bottom: 30px;
+}
+.tech_03_popup_text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #313131;
+  margin-bottom: 30px;
+}
 
 /* NOTE: detail section */
 
@@ -810,17 +950,18 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   color: black;
 }
 
-/* NOTE: Collection section*/
+/* NOTE: toaster*/
 
-#collection {
-  position: relative;
-  width: 100%;
-  height: 1900px;
-  padding: 290px 320px;
+#toaster {
+position: relative;
+width: 100%;
+margin-top: 300px;
+padding: 0 320px;
 }
 
 .toaster  {
   display: flex;
+  margin: 0 auto;
   margin-bottom: 90px;
 }
 .toaster> img {
@@ -828,23 +969,23 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   margin-right: 240px;
   padding: 80px 10px 120px 10px;
 }
-.collection_text {
+.toaster_text {
   padding: 10px 0;
 }
-.collection_text h1  {
+.toaster_text h1  {
   font-family: 'Sequel Sans Semi Bold Head', sans-serif;
   font-size: 3.35rem;
   line-height: 55px;
   margin-bottom: 40px;
 }
-.collection_text h1 span {
+.toaster_text h1 span {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 1.7rem;
   line-height: 40px;
   color: #929292;
 }
-.collection_text> p {
+.toaster_text> p {
   font-family: 'Sequel Sans Roman Body', sans-serif;
   font-size: 1.08rem;
   line-height: 24px;
@@ -852,7 +993,7 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   color: #7f7f7f;
   margin-bottom: 45px;
 }
-.collection_text hr {
+.toaster_text hr {
   width: 90%;
   border: 0;
   height: 2px;
@@ -860,12 +1001,12 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   margin-bottom: 40px;
 }
 
-.collection_text> div {
+.toaster_text> div {
   display: flex;
   height: 45px;
   align-items: center;
 }
-.collection_text button:first-of-type {
+.toaster_text button:first-of-type {
   padding: 9px 28px 11px 28px;
   background: transparent;
   border: 2px solid #1e1e1e;
@@ -876,7 +1017,7 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   transition: 0.3s;
   margin-right: 60px;
 }
-.collection_text button:last-of-type  {
+.toaster_text button:last-of-type  {
   padding: 9px 14px 8px 18px;
   font-size: 1.2rem;
   background: transparent;
@@ -886,25 +1027,219 @@ src:url("../font/Sequel Sans Semi Bold Obl Body.woff");
   margin-right: 12px;
   transition: 0.3s;
 }
-.collection_text> div> p  {
+.toaster_text> div> p  {
   font-family: 'Sequel Sans Semi Bold Obl Body', sans-serif;
   font-size: 1.1rem;
   color: black;
 }
 
-.collection_text button:hover  {
+.toaster_text button:hover  {
   background: #1e1e1e;
   border: 2px solid #1e1e1e;
   color: white;
 }
 
 
-.speaker  {
+
+/* NOTE: toaster_popup */
+
+#toaster_popup {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top:0;
+  left:0;
+  display: none;
+}
+#toaster_popup> img {
+  position: fixed;
+  width: 33px;
+  height: 33px;
+  top: 55px;
+  right: 60px;
+  z-index: 6;
+  cursor: pointer;
+}
+.toaster_popup_contents {
+  background-color: white;
+  width: 1400px;
+  height: 776px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 150px 90px;
   display: flex;
   justify-content: space-between;
-  padding: 0 65px;
-  margin-bottom: 500px;
 }
+.toaster_popup_btn {
+  width: 120px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.toaster_popup_btn> button  {
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  border: 1px solid #7f7f7f;
+  color: #7f7f7f;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.toaster_popup_btn> button:hover  {
+  background: black;
+  border: 1px solid #black;
+  color: white;
+}
+.toaster_popup_text> h1 {
+  font-family: 'Sequel Sans Semi Bold Head', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.toaster_popup_text> h1> span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #a2a2a2;
+  font-size: 1.5rem;
+}
+.toaster_popup_text> p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #959595;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.toaster_popup_text> p> span {
+  color: #707070;
+  font-weight: 800px;
+  text-decoration: underline;
+  cursor: default;
+}
+.toaster_popup_text> hr {
+  border: none;
+  background-color: #dfdfdf;
+  height: 2px;
+  margin-bottom: 40px;
+}
+.toaster_popup_text h3  {
+  font-family: 'Sequel Sans Roman Body', sans-serif;
+  margin-bottom: 20px;
+}
+.toaster_popup_text> div {
+  cursor: pointer;
+}
+
+/* NOTE: toaster_video */
+
+#toaster_video  {
+  position: fixed;
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100vh;
+  top:0;
+  left:0;
+  z-index: 6;
+  display: none;
+}
+#toaster_video> img {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  z-index: 5;
+}
+#toaster_video> video {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* NOTE: speaker */
+
+#speaker {
+  margin-bottom: 300px;
+  padding: 0 320px;
+}
+.speaker  {
+  display: flex;
+  justify-content: space-around;
+}
+.speaker> img {
+  max-height: 100%;
+}
+.speaker_text {
+  padding: 10px 0;
+}
+.speaker_text h1  {
+  font-family: 'Sequel Sans Semi Bold Head', sans-serif;
+  font-size: 3.35rem;
+  line-height: 55px;
+  margin-bottom: 40px;
+}
+.speaker_text h1 span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 40px;
+  color: #929292;
+}
+.speaker_text> p {
+  font-family: 'Sequel Sans Roman Body', sans-serif;
+  font-size: 1.08rem;
+  line-height: 24px;
+  letter-spacing: -0.5pt;
+  color: #7f7f7f;
+  margin-bottom: 45px;
+}
+.speaker_text hr {
+  width: 90%;
+  border: 0;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 40px;
+}
+
+.speaker_text> div {
+  display: flex;
+  height: 45px;
+  align-items: center;
+}
+.speaker_text button:first-of-type {
+  padding: 9px 28px 11px 28px;
+  background: transparent;
+  border: 2px solid #1e1e1e;
+  border-radius: 25px;
+  font-family: 'Sequel Sans Medium Body', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 60px;
+}
+.speaker_text button:last-of-type  {
+  padding: 9px 14px 8px 18px;
+  font-size: 1.2rem;
+  background: transparent;
+  border: 2px solid #1e1e1e;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+.speaker_text> div> p  {
+  font-family: 'Sequel Sans Semi Bold Obl Body', sans-serif;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.speaker_text button:hover  {
+  background: #1e1e1e;
+  border: 2px solid #1e1e1e;
+  color: white;
+}
+
 
 
 /* NOTE: others */
