@@ -7,8 +7,8 @@ p {
     width: 50px;
     height: 50px;
     position: fixed;
-    right: 100px;
-    bottom: 100px;
+    right: 40px;
+    bottom: 40px;
     z-index: 999999;
     background: rgba(255,255,255,0.3);
     border: 1px solid #212121;
@@ -168,7 +168,8 @@ p {
 
 .online_store_line {
     width:0;
-    margin-left: 28px;
+    margin-left: 29px;
+    box-sizing: border-box;
     overflow: hidden;
     transition: all 0.5s;
 }
@@ -488,41 +489,22 @@ p {
     align-items: center;
 }
 
-.page03_btn_frame{
-    position: relative;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 .page03_btn{
     position: relative;
     width: 54px;
     height: 54px;
-    background: transparent;
-    border: 2px solid #313131;
+}
+
+.selbtn> div{
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
-    transition: all 0.3s;
+    border: 2px solid #313131;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.page03_btn:hover{
-    width: 44px;
-    height: 44px;
-    border: 2px solid #212121;
-}
-
-.page03_btn> div {
-    position: absolute;
-    width: 12px;
-    height: 10px;
-    margin: 0 12px;
-    overflow: hidden;
-    display: flex;
+    transition: all 0.3s;
 }
 
 
@@ -978,11 +960,16 @@ p {
 
 .Sec11_img01 {
     position: absolute;
-    top: 127px;
-    right: -325px;
+    top: 50%;
+    right: -340px;
+    transform: translateY(-50%);
     z-index: 1;
 }
 
+.year> img{
+    width: 378px;
+    height: 130px;
+}
 
 /* Collection */
 
@@ -1061,7 +1048,23 @@ p {
     font-size: 12pt;
     font-weight: 600;
 }
-
+.watchmovie{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.watchmovie_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+    align-items: center;
+}
 
 .speaker {
     width: 1070px;
@@ -1125,22 +1128,28 @@ p {
     height: 1100px;
 }
 
+.others_frame{
+    position: absolute;
+    top: 125px;
+    left: 0;
+    width: 100vw;
+    height: 800px;
+    overflow: hidden;
+}
+
 .others {
-    width: 1750px;
-    height: 692px;
-    margin: 0 auto;
-    margin-top: 125px;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: space-around;
-    opacity: 0;
+    z-index: 1;
+    animation: others_ani 24s infinite linear;
 }
 
-.others > div {
-    text-align: center;
-}
-
-.the_pot_text {
-    margin-left: 30px;
+@keyframes others_ani {
+    to {
+        transform: translateX(-3024px);
+    }
 }
 
 /* video2 */

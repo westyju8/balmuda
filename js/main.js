@@ -222,6 +222,17 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    $('.selbtn> div').mouseenter(function (){
+        $(this).css('background','black');
+        $(this).children().css('filter','brightness(100)')
+
+        $('.selbtn> div').mouseleave(function (){
+            $(this).css('background','transparent');
+            $(this).children().css('filter','brightness(0)')
+        });
+
+    });
+
     /*  selBox */
 
     let selBox = gsap.timeline();
@@ -390,18 +401,19 @@ window.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    // section13
 
-    let parallax13 = gsap.timeline();
-    ScrollTrigger.create({
-        animation: parallax13,
-        trigger: "#section13",
-        scrub: 1,
-        start: "top 70%",
-        end: "bottom bottom",
+    $('.watchmovie_icon').mouseenter(function (){
+        $(this).css('background','black');
+        $(this).children().css('filter','brightness(100)')
+
+        $('.watchmovie_icon').mouseleave(function (){
+            $(this).css('background','transparent');
+            $(this).children().css('filter','brightness(0)')
+        });
+
     });
 
-    parallax13.to(".others",{y:-50, opacity: 1},0);
+    // section13
 
 
     // section16
