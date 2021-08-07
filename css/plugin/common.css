@@ -22,7 +22,7 @@ body{
 
 
 .scroll-content > section:nth-child(even){
-    background: red;
+    background: white;
 }
 
 
