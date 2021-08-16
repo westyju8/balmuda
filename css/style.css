@@ -18,13 +18,19 @@ p {
     align-items: center;
     outline: none;
     cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
 }
 
+.startPoint.on{
+    opacity: 1;
+}
 
 #intro{
     position: fixed;
     left: 0;
     top: 0;
+    /*transform: translate(-50%,-50%);*/
     width: 100vw;
     height: 100vh;
     z-index: 999999999;
@@ -133,22 +139,33 @@ p {
     background-size: cover;
 }
 
+.screen{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 1;
+}
+
 .Sec01_menu {
     display: flex;
     justify-content: space-between;
     margin: 40px;
+    z-index: 2;
 }
 .main_logo{
     opacity: 0;
 }
 .main_menu_btn {
     cursor: pointer;
+    z-index: 10;
 }
 
 #section01 .txt_container {
     position: absolute;
     top: 280px;
     left: 260px;
+    z-index: 2;
     /*opacity: 0;*/
 }
 
