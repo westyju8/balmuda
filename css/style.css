@@ -197,8 +197,11 @@ p {
 
 .GotoStore {
     position: absolute;
+    width: 48px;
+    height: 186px;
     right: 40px;
     bottom: 40px;
+    z-index: 2;
 }
 
 
@@ -951,7 +954,7 @@ p {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 163px;
+    width: 144px;
     height: 70px;
     left: 250px;
     bottom: 200px;
@@ -961,8 +964,8 @@ p {
 
 .Sec11_btn{
     background: transparent;
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     border: 2px solid white;
     border-radius: 50%;
     display: flex;

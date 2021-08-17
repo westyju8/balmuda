@@ -61,12 +61,13 @@ window.addEventListener('DOMContentLoaded', function () {
         tl.to('.visual .txt > div',3,{delay:-3, x:0, ease: Power3.easeInOut});
 
         tl.to('.visual .intro_txt',2.5,{delay:-2,opacity:1});
-        tl.to('#intro',0.1,{delay: -1, background:'rgba(0,0,0,0)'});
-        tl.to('#intro',1.5,{delay:-1, scale:0.3,x:-(innerWidth *0.447),y:-(innerHeight * 0.451)});
-        tl.to('.screen',1.5,{delay: -1.5, background:'rgba(0,0,0,0)'});
+
+        tl.to('#intro',1.5,{delay:0, scale:0.3,x:-(innerWidth *0.447),y:-(innerHeight * 0.451)});
+        tl.to('#intro',0.5,{delay: -1.5, background:'rgba(0,0,0,0)'});
+        tl.to('.screen',1.2,{delay: -1.2, background:'rgba(0,0,0,0)'});
         // tl.to('#intro',1,{delay:-0.6, background:'rgba(0,0,0,0)'});
         // tl.to('#intro',1.2,{delay:-0.2, scale:0.31,x:-(innerWidth *0.447),y:-(innerHeight * 0.451)});
-        tl.to('#section01 .txt_container',1,{delay:-1, opacity:1});
+        tl.to('#section01 .txt_container',1,{delay: 0, opacity:1});
 
     }
 
