@@ -675,6 +675,30 @@ window.addEventListener('DOMContentLoaded', function () {
 
     });
 
+    //popup06
+
+    $(".video_toaster").click(function(){
+        $(".pop06").addClass("on");
+        $("#video_toaster").get(0).play();
+    });
+    $(".pop06 .close_btn").click(function(){
+        $(".pop06").removeClass("on");
+        $("#video_toaster").get(0).pause();
+        $("#video_toaster").get(0).currentTime = 0;
+    });
+
+    //popup07
+
+    $(".video_speaker").click(function(){
+        $(".pop07").addClass("on");
+        $('#video_speaker').get(0).play();
+    });
+    $(".pop07 .close_btn").click(function(){
+        $(".pop07").removeClass("on");
+        $('#video_speaker').get(0).pause();
+        $('#video_speaker').get(0).currentTime = 0;
+    });
+
     // mouse cursor
 
     var $mouseX = 0,

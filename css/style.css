@@ -955,9 +955,9 @@ p {
     display: flex;
     justify-content: space-between;
     width: 144px;
-    height: 70px;
+    height: 55px;
     left: 250px;
-    bottom: 200px;
+    bottom: 210px;
     cursor: pointer;
     z-index: 10;
 }
@@ -1601,6 +1601,32 @@ p {
 
 .pop05_txt {
     margin-top: 78px;
+}
+
+/* popup06 */
+
+.video_toaster_bg {
+    position: absolute;
+    width: 1600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.video_toaster_bg> video{
+    width: 1600px;
+}
+
+/* popup07 */
+
+.video_speaker_bg {
+    position: absolute;
+    width: 1600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.video_speaker_bg> video{
+    width: 1600px;
 }
 
 /*close button*/
